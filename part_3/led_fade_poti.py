@@ -6,7 +6,7 @@ import time
 p32 = machine.Pin(32)
 pwm32 = machine.PWM(p32)
 pwm32.freq(5000)
-pwm32.duty(255)
+pwm32.duty(1023)
 
 #poti config
 pot = machine.ADC(machine.Pin(33))
