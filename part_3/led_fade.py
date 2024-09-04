@@ -7,12 +7,12 @@ pwm32.freq(5000)
 pwm32.duty(255)
 print(pwm32)
 while True:
-    for i in range(1023):
+    for i in range(255):
         pwm32.duty(i)
         print(i)
         time.sleep_ms(10)
     time.sleep(1)    
-    for i in range(1023,0,-1):
+    for i in range(255,0,-1):
         pwm32.duty(i)
         print(i)
         time.sleep_ms(10)
