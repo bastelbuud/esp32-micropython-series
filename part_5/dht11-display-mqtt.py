@@ -1,6 +1,6 @@
 # get data from DHT and display them on display
 # DHT 11 data connected to pin 14
-# the data is also send to mqtt via wifi
+# the data is also send to mqtt via wifi to a message broker in order to be used in a smarthome system
 
 from machine import Pin, SoftI2C, reset
 from time import sleep
